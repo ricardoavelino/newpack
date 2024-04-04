@@ -19,12 +19,11 @@ class Beam:
         self.end_point = end_point
 
     def calculate_length(self):
-        """Calculate the length using the start and end points
-        """
+        """Calculate the length using the start and end points"""
         dx = self.end_point[0] - self.start_point[0]
         dy = self.end_point[1] - self.start_point[1]
         dz = self.end_point[2] - self.start_point[2]
-        self.length = (dx**2 + dy**2 + dz**2)**0.5
+        self.length = (dx**2 + dy**2 + dz**2) ** 0.5
         return self.length
 
     def store_cross_section(self, cross_section):

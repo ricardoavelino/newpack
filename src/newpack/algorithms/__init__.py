@@ -4,5 +4,4 @@ from .beam import Beam
 from .point import Point
 
 
-__all__ = ["Beam",
-           "Point"]
+__all__ = ["Beam", "Point"]
