@@ -1,3 +1,0 @@
-# Authors
-
--  <<>> [@](https://github.com/)
