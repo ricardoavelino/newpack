@@ -32,7 +32,7 @@ class Beam:
         Parameters
         ----------
         cross_section : str
-            Cross section Name
+            Cross section name to be assigned
         """
         # Store the cross section of the beam
         self.cross_section = cross_section
