@@ -47,14 +47,14 @@ class Beam:
         """
         return self.cross_section
 
-    def set_properties(self, E, I, A):
+    def set_properties(self, E, Ix, A):
         """Set the structural properties of the beam.
 
         Parameters
         ----------
         E : floar
             The Young's modulus of the beam.
-        I : float
+        Ix : float
             The moment of inertia of the beam.
         A : float
             The cross-sectional area of the beam.
@@ -66,7 +66,7 @@ class Beam:
         """
         # Set the structural properties of the beam
         self.E = E  # Young's modulus
-        self.I = I  # Moment of inertia
+        self.Ix = Ix  # Moment of inertia
         self.A = A  # Cross-sectional area
 
     def get_youngs_modulus(self):
