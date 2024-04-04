@@ -32,7 +32,7 @@ class Beam:
         Parameters
         ----------
         cross_section : str
-            Cross section name to be assigned
+            Cross section name to be assigned.
         """
         # Store the cross section of the beam
         self.cross_section = cross_section
@@ -52,7 +52,7 @@ class Beam:
 
         Parameters
         ----------
-        E : floar
+        E : float
             The Young's modulus of the beam.
         Ix : float
             The moment of inertia of the beam.
