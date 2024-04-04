@@ -6,6 +6,8 @@ newpack
 
 Testing package
 
+This is the home of the newpack package. It is a package for testing purposes.
+
 .. .. figure:: /_images/
      :figclass: figure
      :class: figure-img img-fluid

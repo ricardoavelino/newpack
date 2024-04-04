@@ -21,7 +21,10 @@ class Beam:
     def calculate_length(self):
         """Calculate the length using the start and end points
         """
-        self.length = ((self.end_point[0] - self.start_point[0])**2 + (self.end_point[1] - self.start_point[1])**2 + (self.end_point[2] - self.start_point[2])**2)**0.5
+        dx = self.end_point[0] - self.start_point[0]
+        dy = self.end_point[1] - self.start_point[1]
+        dz = self.end_point[2] - self.start_point[2]
+        self.length = (dx**2 + dy**2 + dz**2)**0.5
         return self.length
 
     def store_cross_section(self, cross_section):
@@ -36,14 +39,66 @@ class Beam:
         self.cross_section = cross_section
 
     def get_cross_section(self):
-        # Return the stored cross section of the beam
+        """Returns the cross section of the beam.
+
+        Returns
+        -------
+        cross_section : str
+            The cross section of the beam.
+        """
         return self.cross_section
 
     def set_properties(self, E, I, A):
+        """Set the structural properties of the beam.
+
+        Parameters
+        ----------
+        E : floar
+            The Young's modulus of the beam.
+        I : float
+            The moment of inertia of the beam.
+        A : float
+            The cross-sectional area of the beam.
+
+        Returns
+        -------
+        None
+            Sets the structural properties of the beam.
+        """
         # Set the structural properties of the beam
         self.E = E  # Young's modulus
         self.I = I  # Moment of inertia
         self.A = A  # Cross-sectional area
+
+    def get_youngs_modulus(self):
+        """Returns the Young's modulus of the beam.
+
+        Returns
+        -------
+        float
+            The Young's modulus of the beam.
+        """
+        return self.E
+
+    def get_moment_of_inertia(self):
+        """Returns the moment of inertia of the beam.
+
+        Returns
+        -------
+        float
+            The moment of inertia of the beam.
+        """
+        return self.I
+
+    def get_cross_sectional_area(self):
+        """Returns the cross-sectional area of the beam.
+
+        Returns
+        -------
+        float
+            The cross-sectional area of the beam.
+        """
+        return self.A
 
     def get_properties(self):
         # Return the structural properties of the beam
